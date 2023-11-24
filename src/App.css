@@ -1,0 +1,149 @@
+* {
+  font-family: 'Google Sans';
+}
+body {
+  background-color: #1B1C18;
+}
+header {
+  width: 100%;
+         height: 50px;
+        background-color: #1b1c189f;
+        backdrop-filter: blur(10px);
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        align-items: center;
+  justify-content: center;
+  z-index: 50;
+}
+header h1 {
+  margin: 0;
+  margin-top: 15px;
+  margin-left: 15px;
+  font-size: 25px;
+  font-weight: bold;
+   color: #C9EE9E;
+}
+header .lang {
+  right: 10px;
+  top: 5px;
+  width: 50px;
+  height: 50px;
+  margin: 0;
+  position: fixed;
+}
+.content {
+  margin-top: 70px;
+}
+
+.container #avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    padding: 5px;
+    border: 1px solid #6D7264;
+    overflow: hidden;
+    margin: auto;
+    margin-top: 15px;
+  }
+  #text {
+    margin: auto;
+    margin-top: 20px;
+  }
+.container #text h1 {
+  color: #E4E3DD;
+  font-size: 20px;
+  margin: auto;
+  font-weight: bold;
+}
+.container #text p {
+  color: gray;
+  margin: auto;
+  font-size: 14px;
+}
+.container {
+  border-radius: 20px;
+  background-color: #23261E;
+  padding: 15px;
+  height: auto;
+  width: 350px;
+  margin-top: 10px;
+  margin-left: 15px;
+  pointer-events: auto;
+  text-align: center;
+  margin: auto;
+  color: white;
+}
+h1 {
+  color: white;
+  font-size: 30px;
+}
+.code-space {
+  padding: 15px;
+  background-color: #373737;
+  margin-top: 10px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  font-family: monospace;
+  color: white;
+  text-align: start;
+  word-wrap: break-word;
+}
+.blinking-cursor {
+  display: inline-block;
+  width: 10px;
+  height: 15px;
+  background-color: white;
+  animation: blink 1s infinite;
+  margin-left: 5px;
+  border-radius: 2px;
+}
+
+@keyframes blink {
+  100% {
+    opacity: 0;
+  }
+}
+.green {
+  color: #35c300;
+}
+.parent-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.container {
+  border-radius: 20px;
+  background-color: #23261E;
+  padding: 20px;
+  height: auto;
+  width: 350px;
+  margin: 10px;
+  color: #E4E3DD;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  animation: fade-in 1s;
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+ }
+}
+.lastfmcover {
+  margin: auto;
+    margin-top: 15px;
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+}
+@media screen and (max-width: 768px) {
+  header {
+    height: 60px;
+  }
+}
