@@ -1,8 +1,6 @@
 import React from 'react' ;
 import Lastfm from './lastfm.jsx';
 import { useTranslation } from 'react-i18next';
-import i18next from 'i18next';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 export default function Content() {
   const { t } = useTranslation();
     return (
@@ -14,19 +12,24 @@ export default function Content() {
         <div id="text">
         <h1>{t('name')}</h1>
         <p>{t('about')}</p>
+        <p>{t('hobby')}</p>
      </div>
-     <div className="code-space">
-    <p className="green">[santik@santiksu] $</p>
-    
-     <span class="blinking-cursor"></span>
+     <div className="social-space">
+ <a href="https://vk.com/santiksu" target="_blank" rel="noreferrer">
+      VK
+    </a>
+    <a href="https://t.me/mediashiza" target="_blank" rel="noreferrer">
+      TG
+    </a>
      </div>
      </div>
 
-  <div class="container">
-  <h1>Contacts</h1> <FontAwesomeIcon icon="fa-brands fa-vk" style={{color: "#ffffff",}} />
+  <div className="container">
+  <h1>Projects</h1>
   </div>
-  <div class="container">
+  <div className="container">
   <Lastfm />
+  <div className="mini-message"><p>Hello there :)</p></div>
   </div>
 </div>
      </div>

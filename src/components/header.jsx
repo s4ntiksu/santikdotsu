@@ -8,7 +8,7 @@ export default function Header() {
 
   return (
     <header>
-      <h1>santiksu</h1>
+      <h1>santiksu | βeta</h1>
       <IconButton className="lang" sx={{color: "#C9EE9E"}} onClick={() => i18next.changeLanguage(i18next.language === 'en' ? 'ru' : 'en')}><TranslateRoundedIcon /></IconButton>
     </header>
   );

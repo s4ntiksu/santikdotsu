@@ -1,6 +1,12 @@
 * {
   font-family: 'Google Sans';
 }
+
+::selection {
+  background-color: #C9EE9E;
+  color: #1B1C18;
+  border-radius: 5px;
+}
 body {
   background-color: #1B1C18;
 }
@@ -35,6 +41,9 @@ header .lang {
 }
 .content {
   margin-top: 70px;
+}
+a {
+  margin-right: 5px;
 }
 
 .container #avatar {
@@ -79,16 +88,50 @@ h1 {
   color: white;
   font-size: 30px;
 }
-.code-space {
-  padding: 15px;
-  background-color: #373737;
+.mini-message {
+  width: 350px;
+  height: auto;
+  padding: 20px;
+  background-color: #1b1c18e7;
+  position: fixed;
+  bottom: -1000px;
+  border-radius: 10px;
+  text-align: start;
+  animation: fade 4s;
+}
+.mini-message p {
+  margin: auto;
+}
+@keyframes fade {
+  0% {
+     bottom: -1000px;
+  }
+  25% {
+    bottom: 10px;
+  }
+  50% {
+    bottom: 10px;
+  }
+ 70% {
+    bottom: 10px;
+  }
+  100%{
+    bottom: -1000px;
+    display: none;
+  }
+}
+.social-space {
+  padding: 20px;
+  background-color: transparent;
   margin-top: 10px;
   border-radius: 20px;
   margin-bottom: 20px;
   font-family: monospace;
   color: white;
-  text-align: start;
-  word-wrap: break-word;
+  border: 1px solid #6D7264;
+}
+.social-space a {
+  margin: 5px;
 }
 .blinking-cursor {
   display: inline-block;
@@ -99,7 +142,18 @@ h1 {
   margin-left: 5px;
   border-radius: 2px;
 }
-
+.select {
+  width: auto;
+  height: auto;
+  margin: 5px;
+  background-color: white;
+  padding-block: 10px;
+  border-radius: 20px;
+}
+.select:hover {
+  background-color: black;
+  cursor: pointer;
+}
 @keyframes blink {
   100% {
     opacity: 0;
@@ -146,4 +200,38 @@ h1 {
   header {
     height: 60px;
   }
+  .container {  
+  border-radius: 20px;
+  background-color: #23261E;
+  padding: 15px;
+  height: auto;
+  width: 350px;
+  margin: auto;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  animation-name: start-me;
+  animation-duration: 0.75s;
+  animation-timing-function: linear;
+  pointer-events: auto;
+}
+  .container #avatar {
+    border-radius: 50%;
+    padding: 5px;
+    border: 1px solid #6D7264;
+  }
+  .container #text h1 {
+  flex: 1;
+  color: #E4E3DD;
+  margin: auto;
+  font-size: 20px;
+  margin-left: 10px;
+}
+.container #text p {
+  color: gray;
+  margin: auto;
+  flex: 2;
+  margin-left: 10px;
+  font-size: 14px;
+}
 }
