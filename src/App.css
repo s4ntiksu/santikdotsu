@@ -1,185 +1,96 @@
-* {
-  font-family: 'Google Sans';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+:root {
+  --md-filled-button-container-shape: 9999px;
+  --md-filled-button-label-text-font: system-ui;
+  --md-sys-color-primary: #C9EE9E;
+  --md-sys-color-on-primary: black;
+}
+@font-face {
+    font-family: 'Google Sans';
+    src: url('./fonts/GoogleSans-MediumItalic.eot');
+    src: local('Google Sans Medium Italic'), local('./fonts/GoogleSans-MediumItalic'),
+        url('./fonts/GoogleSans-MediumItalic.eot?#iefix') format('embedded-opentype'),
+        url('./fonts/GoogleSans-MediumItalic.woff2') format('woff2'),
+        url('./fonts/GoogleSans-MediumItalic.woff') format('woff'),
+        url('./fonts/GoogleSans-MediumItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
 }
 
-::selection {
-  background-color: #C9EE9E;
-  color: #1B1C18;
-  border-radius: 5px;
-}
-body {
-  background-color: #1B1C18;
-}
-header {
-  width: 100%;
-         height: 50px;
-        background-color: #1b1c189f;
-        backdrop-filter: blur(10px);
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-        align-items: center;
-  justify-content: center;
-  z-index: 50;
-}
-header h1 {
-  margin: 0;
-  margin-top: 15px;
-  margin-left: 15px;
-  font-size: 25px;
-  font-weight: bold;
-   color: #C9EE9E;
-}
-header .lang {
-  right: 10px;
-  top: 5px;
-  width: 50px;
-  height: 50px;
-  margin: 0;
-  position: fixed;
-}
-.content {
-  margin-top: 70px;
-}
-a {
-  margin-right: 5px;
+@font-face {
+    font-family: 'Google Sans';
+    src: url('./fonts/GoogleSans-Bold.eot');
+    src: local('Google Sans Bold'), local('./fonts/GoogleSans-Bold'),
+        url('./fonts/GoogleSans-Bold.eot?#iefix') format('embedded-opentype'),
+        url('./fonts/GoogleSans-Bold.woff2') format('woff2'),
+        url('./fonts/GoogleSans-Bold.woff') format('woff'),
+        url('./fonts/GoogleSans-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
 }
 
-.container #avatar {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    padding: 5px;
-    border: 1px solid #6D7264;
-    overflow: hidden;
-    margin: auto;
-    margin-top: 15px;
-  }
-  #text {
-    margin: auto;
-    margin-top: 20px;
-  }
-.container #text h1 {
-  color: #E4E3DD;
-  font-size: 20px;
-  margin: auto;
-  font-weight: bold;
-}
-.container #text p {
-  color: gray;
-  margin: auto;
-  font-size: 14px;
-}
-.container {
-  border-radius: 20px;
-  background-color: #23261E;
-  padding: 15px;
-  height: auto;
-  width: 350px;
-  margin-top: 10px;
-  margin-left: 15px;
-  pointer-events: auto;
-  text-align: center;
-  margin: auto;
-  color: white;
-}
-h1 {
-  color: white;
-  font-size: 30px;
-}
-.mini-message {
-  width: 350px;
-  height: auto;
-  padding: 20px;
-  background-color: #1b1c18e7;
-  position: fixed;
-  bottom: -1000px;
-  border-radius: 10px;
-  text-align: start;
-  animation: fade 4s;
-}
-.mini-message p {
-  margin: auto;
-}
-@keyframes fade {
-  0% {
-     bottom: -1000px;
-  }
-  25% {
-    bottom: 10px;
-  }
-  50% {
-    bottom: 10px;
-  }
- 70% {
-    bottom: 10px;
-  }
-  100%{
-    bottom: -1000px;
-    display: none;
-  }
-}
-.social-space {
-  padding: 20px;
-  background-color: transparent;
-  margin-top: 10px;
-  border-radius: 20px;
-  margin-bottom: 20px;
-  font-family: monospace;
-  color: white;
-  border: 1px solid #6D7264;
-}
-.social-space a {
-  margin: 5px;
-}
-.blinking-cursor {
-  display: inline-block;
-  width: 10px;
-  height: 15px;
-  background-color: white;
-  animation: blink 1s infinite;
-  margin-left: 5px;
-  border-radius: 2px;
-}
-.select {
-  width: auto;
-  height: auto;
-  margin: 5px;
-  background-color: white;
-  padding-block: 10px;
-  border-radius: 20px;
-}
-.select:hover {
-  background-color: black;
-  cursor: pointer;
-}
-@keyframes blink {
-  100% {
-    opacity: 0;
-  }
-}
-.green {
-  color: #35c300;
-}
-.parent-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+@font-face {
+    font-family: 'Google Sans';
+    src: url('./fonts/GoogleSans-Italic.eot');
+    src: local('Google Sans Italic'), local('./fonts/GoogleSans-Italic'),
+        url('./fonts/GoogleSans-Italic.eot?#iefix') format('embedded-opentype'),
+        url('./fonts/GoogleSans-Italic.woff2') format('woff2'),
+        url('./fonts/GoogleSans-Italic.woff') format('woff'),
+        url('./fonts/GoogleSans-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
 }
 
-.container {
-  border-radius: 20px;
-  background-color: #23261E;
-  padding: 20px;
-  height: auto;
-  width: 350px;
-  margin: 10px;
-  color: #E4E3DD;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
+@font-face {
+    font-family: 'Google Sans';
+    src: url('./fonts/GoogleSans-Medium.eot');
+    src: local('Google Sans Medium'), local('./fonts/GoogleSans-Medium'),
+        url('./fonts/GoogleSans-Medium.eot?#iefix') format('embedded-opentype'),
+        url('./fonts/GoogleSans-Medium.woff2') format('woff2'),
+        url('./fonts/GoogleSans-Medium.woff') format('woff'),
+        url('./fonts/GoogleSans-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Google Sans';
+    src: url('./fonts/GoogleSans-Regular.eot');
+    src: local('Google Sans Regular'), local('./fonts/GoogleSans-Regular'),
+        url('./fonts/GoogleSans-Regular.eot?#iefix') format('embedded-opentype'),
+        url('./fonts/GoogleSans-Regular.woff2') format('woff2'),
+        url('./fonts/GoogleSans-Regular.woff') format('woff'),
+        url('./fonts/GoogleSans-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Google Sans';
+    src: url('./fonts/GoogleSans-BoldItalic.eot');
+    src: local('Google Sans Bold Italic'), local('./fonts/GoogleSans-BoldItalic'),
+        url('./fonts/GoogleSans-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('./fonts/GoogleSans-BoldItalic.woff2') format('woff2'),
+        url('./fonts/GoogleSans-BoldItalic.woff') format('woff'),
+        url('./fonts/GoogleSans-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+#fade-in {
   animation: fade-in 1s;
+}
+@keyframes closePopup {
+  from {
+    opacity: 1;
+  }
+  to {
+   opacity: 0;
+  }
+}
+#popup {
+  animation: popup 1s;
 }
 @keyframes fade-in {
   0% {
@@ -187,51 +98,35 @@ h1 {
   }
   100% {
     opacity: 1;
- }
+  }
 }
-.lastfmcover {
-  margin: auto;
-    margin-top: 15px;
-    width: 200px;
-    height: 200px;
-    border-radius: 20px;
+@keyframes popup {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 @media screen and (max-width: 768px) {
-  header {
-    height: 60px;
+  @keyframes popup {
+ from {
+    top: 110%;
   }
-  .container {  
-  border-radius: 20px;
-  background-color: #23261E;
-  padding: 15px;
-  height: auto;
-  width: 350px;
-  margin: auto;
-  margin-top: 10px;
-  display: flex;
-  align-items: center;
-  animation-name: start-me;
-  animation-duration: 0.75s;
-  animation-timing-function: linear;
-  pointer-events: auto;
-}
-  .container #avatar {
-    border-radius: 50%;
-    padding: 5px;
-    border: 1px solid #6D7264;
+  to {
+    opacity: 1;
   }
-  .container #text h1 {
-  flex: 1;
-  color: #E4E3DD;
-  margin: auto;
-  font-size: 20px;
-  margin-left: 10px;
 }
-.container #text p {
-  color: gray;
-  margin: auto;
-  flex: 2;
-  margin-left: 10px;
-  font-size: 14px;
+.show {
+  animation: closePopup 1s;
+}
+
+@keyframes closePopup {
+  from {
+    opacity: 1;
+  }
+  to {
+    top: 110%;
+  }
 }
 }
