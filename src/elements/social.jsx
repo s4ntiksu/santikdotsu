@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import '@material/web/button/filled-button.js';
 import * as SolarIconSet from 'solar-icon-set';
 import '@material/web/button/text-button.js';
 import Link from './link.jsx';
@@ -22,7 +21,7 @@ export default function Social() {
 
   return (
     <div>
-      <md-filled-button onClick={togglePopup} className="font-google">
+      <button onClick={togglePopup} className="font-google w-32 h-16 p-2 rounded-2xl fixed bottom-5 right-5 bg-[#C9EE9E]">
         Socials
         <svg
           slot="icon"
@@ -31,7 +30,7 @@ export default function Social() {
         >
           <path d="M9 42q-1.2 0-2.1-.9Q6 40.2 6 39V9q0-1.2.9-2.1Q7.8 6 9 6h13.95v3H9v30h30V25.05h3V39q0 1.2-.9 2.1-.9.9-2.1.9Zm10.1-10.95L17 28.9 36.9 9H25.95V6H42v16.05h-3v-10.9Z" />
         </svg>
-      </md-filled-button>
+      </button>
       {showPopup && (
         <div>
           <div
