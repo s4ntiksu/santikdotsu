@@ -21,7 +21,7 @@ export default function Social() {
 
   return (
     <div>
-      <button onClick={togglePopup} className="font-google w-32 h-16 p-2 rounded-2xl fixed bottom-5 right-5 bg-[#C9EE9E]">
+      <button onClick={togglePopup} className="font-google w-auto h-auto p-5 rounded-2xl fixed bottom-5 right-5 bg-[#C9EE9E]">
         Socials
         <svg
           slot="icon"
@@ -36,11 +36,11 @@ export default function Social() {
           <div
           onClick={closePopup}
             id="fade-in"
-            className="bg-black/50 w-full top-0 fixed h-full left-1/2 transform w-full -translate-x-1/2 p-2"
+            className="bg-black/50 backdrop-blur-md w-full top-0 fixed h-full left-1/2 transform w-full -translate-x-1/2 p-2"
           ></div>
           <div
             id="popup"
-            className={`bg-[#383d30] w-96 max-sm:w-full max-sm:h-full h-72 fixed top-48 max-sm:top-[30%] left-1/2 transform -translate-x-1/2 p-4 rounded-[25px] justify-center items-center ${showPopup ? 'show' : ''}`}
+            className={`bg-[#383d30]/90 w-96 max-sm:w-full max-sm:h-full h-72 fixed top-[40%] max-sm:top-[50%] left-1/2 transform -translate-x-1/2 p-4 rounded-[25px] justify-center items-center ${showPopup ? 'show' : ''}`}
           >
             <SolarIconSet.CloseCircle
               color="#C9EE9E"

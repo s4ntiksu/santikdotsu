@@ -1,10 +1,8 @@
 import './App.css';
 import Social from './elements/social.jsx';
 import Header from './elements/header.jsx';
-import Age from './utilities/age.tsx';
 import santiksu from './images/santiksu.png'
 export default function App() {
-  const birthDate = new Date('2005-11-16');
   return (
     <div>
     <Header />
@@ -12,7 +10,8 @@ export default function App() {
         <div className="p-5 items-center justify-center mx-auto">
         <img src={santiksu} className="h-auto mx-auto w-48 p-2 margin-4 border border-gray-600 rounded-full" alt="santiksu logo"/>
                         <h1 className="text-[#C9EE9E] font-bold mt-4 font-google text-center text-3xl">Alexander Timush</h1>
-                            <Age birthDate={birthDate} />
+                        <p className="text-white font-google text-center">18 y.o. Funny developer guy from 🇷🇺 Russia. </p>
+                          
         </div>
        
 

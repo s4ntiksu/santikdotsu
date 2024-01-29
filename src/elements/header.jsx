@@ -19,7 +19,7 @@ export default function Header() {
         <h2 className="text-white ml-3 font-google font-bold text-xl">Home</h2>
       </div>
       <div
-        className={classNames('fixed top-16 left-0 w-72 bg-black/75 z-9999 p-5 h-full transition-transform', {
+        className={classNames('fixed top-16 backdrop-blur-md left-0 w-72 bg-black/75 z-9999 p-5 h-full transition-transform', {
           'translate-x-0': showMenu,
           '-translate-x-full': !showMenu,
         })}
