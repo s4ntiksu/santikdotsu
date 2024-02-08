@@ -1,6 +1,6 @@
 # santiksus web page | βeta
 ## about
-The app created with [Create React App](https://github.com/facebook/create-react-app) from Meta Platforms (Facebook). 
+The app created with Tailwind CSS and [Create React App](https://github.com/facebook/create-react-app) from Meta Platforms (Facebook). 
 ## instruction
 1. Clone the repository.
 2. Open the cloned local repository and install all dependencies using command `npm i` or `pnpm install`
