@@ -40,7 +40,7 @@ export default function Social() {
           ></div>
           <div
             id="popup"
-            className={`bg-[#383d30]/90 w-96 max-sm:w-full max-sm:h-full h-72 fixed top-[40%] max-sm:top-[50%] left-1/2 transform -translate-x-1/2 p-4 rounded-[25px] justify-center items-center ${showPopup ? 'show' : ''}`}
+            className={`bg-[#383d30]/90 w-96 max-sm:w-full max-sm:h-full h-72 fixed top-48 max-sm:top-56 left-1/2 transform -translate-x-1/2 p-4 rounded-[25px] justify-center items-center ${showPopup ? 'show' : ''}`}
           >
             <SolarIconSet.CloseCircle
               color="#C9EE9E"
