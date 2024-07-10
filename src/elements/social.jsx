@@ -21,7 +21,7 @@ export default function Social() {
 
   return (
     <div>
-      <button onClick={togglePopup} className="font-google w-auto h-auto p-5 rounded-2xl fixed bottom-5 right-5 bg-[#C9EE9E]">
+      <button onClick={togglePopup} className="font-google w-auto h-auto p-5 rounded-2xl fixed bottom-5 opacity-0 right-5 bg-[#C9EE9E]">
         Socials
         <svg
           slot="icon"

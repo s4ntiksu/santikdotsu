@@ -1,6 +1,6 @@
 import './App.css';
-import Social from './elements/social.jsx';
 import Header from './elements/header.jsx';
+import Webring from './elements/webring';
 import santiksu from './images/santiksu.png'
 export default function App() {
   return (
@@ -15,11 +15,10 @@ export default function App() {
         </div>
        
 
-<Social />
       
           
         </figure>
- 
+ <Webring />
     </div>
     )
 }
