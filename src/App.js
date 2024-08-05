@@ -32,10 +32,10 @@ export default function App() {
   return (
     <div>
       <Header />
-      <figure className="w-80 p-4 bg-[#23261E] h-auto rounded-xl mt-40 mx-auto font-google text-white">
+      <figure className="w-80 p-4 bg-[#23261E] h-auto rounded-xl mt-36 mx-auto font-google text-white">
         <h1 className="text-2xl mb-4">About me</h1>
         <div className="flex items-center">
-          <img className="rounded-full w-20 mr-4" src={santiksu} alt="Avatar" />
+          <img className="rounded-full w-24 mr-4" src={santiksu} alt="Avatar" />
           <div>
             <h3 className="text-lg font-bold">Alexander Timush</h3>
             <p className="text-[#E4E3DD]">Nickname: santiksu</p>

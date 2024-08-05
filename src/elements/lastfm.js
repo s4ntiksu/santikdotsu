@@ -1,5 +1,4 @@
 import { useLastFM } from 'use-last-fm';
-
 const Lastfm = () => {
   const lastFM = useLastFM('s4nt1k', '0085b7d63e377611b7bc03a46cfa1dfe');
 
@@ -13,7 +12,8 @@ const Lastfm = () => {
 
   return (
     <div>
-      <div className="flex items-center p-4 bg-[#657251] rounded-xl font-google text-white">
+      <div className="flex items-center p-4 bg-[#657251] rounded-xl font-google text-white relative">
+    
         {lastFM.song.art && (
           <img
             src={lastFM.song.art}
