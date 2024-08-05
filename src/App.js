@@ -54,7 +54,7 @@ export default function App() {
             <a href="https://mastodon.ml/@santik" target="_blank" rel="noreferrer" className="mr-4">
               <M width="20" height="20" />
             </a>
-            <a href="https://github.com/santiksu" target="_blank" rel="noreferrer" className="mr-4">
+            <a href="https://github.com/s4ntiksu" target="_blank" rel="noreferrer" className="mr-4">
               <GH width="20" height="20" />
             </a>
             <a href="https://vepurovk.xyz/sa" target="_blank" rel="noreferrer" className="mr-4">
