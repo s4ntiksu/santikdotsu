@@ -12,7 +12,7 @@ const Lastfm = () => {
 
   return (
     <div>
-      <div className="flex items-center p-4 bg-[#657251] rounded-xl font-google text-white relative">
+      <div className="flex items-center p-4 bg-[#657251] rounded-xl font-google text-white">
     
         {lastFM.song.art && (
           <img
