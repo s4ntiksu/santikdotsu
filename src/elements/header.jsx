@@ -6,29 +6,37 @@ export default function Header() {
   const [showMenu, setShowMenu] = useState(false);
 
   const toggleMenu = () => {
-    setShowMenu(!showMenu);
+    setShowMenu(prevState => !prevState);
   };
 
   return (
     <div>
       <div className="fixed top-0 w-full h-14 bg-[#141714] p-5 flex items-center">
-        <h2 onClick={toggleMenu} className="text-white ml-3 font-google font-bold text-xl cursor-pointer">
+        <div className="mt-1" onClick={toggleMenu}>
+          <SolarIconSet.HamburgerMenu color="white" size={32} iconStyle="Linear" />
+        </div>
+        <h2 className="text-white ml-3 font-google font-bold text-xl cursor-pointer">
           Home
         </h2>
       </div>
       <div
         className={classNames(
-          'fixed backdrop-blur-md left-0 w-full bg-black bottom-0 pt-2 h-full transition-transform',
+          'fixed left-0 w-full bg-black bottom-0 pt-2 h-full transition-transform',
           {
-            'translate-y-full': !showMenu,
-            'translate-y-1/2': showMenu,
+            '-translate-x-full': !showMenu,
+            'translate-x-0': showMenu,
           }
         )}
       >
-        <figure className="bg-white w-8 h-1 rounded-xl mx-auto"></figure>
-        <div className="p-5 font-google text-white">
-         <h1 className="text-4xl">Menu</h1>
-           <md-list-item className="font-google text-white">Apple</md-list-item>
+        <div onClick={toggleMenu} className="absolute top-5 right-5 cursor-pointer">
+          <SolarIconSet.CloseSquare color="white" size={32} iconStyle="Linear" />
+        </div>
+        <div className="p-4 font-google text-white">
+          <h1 className="text-4xl">Menu</h1>
+          <div className="mx-auto mt-32">
+            <p className="text-2xl">Source code</p>
+            <p className="text-2xl">Donate</p>
+          </div>
         </div>
       </div>
     </div>
